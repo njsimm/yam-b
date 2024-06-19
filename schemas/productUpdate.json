@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "productUpdate Schema",
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "description": {
+      "type": "string"
+    },
+    "price": {
+      "type": "number"
+    },
+    "cost": {
+      "type": "number"
+    },
+    "sku": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "minutesToMake": {
+      "type": "integer"
+    },
+    "type": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "productUpdatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "quantityUpdatedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "examples": [
+    {
+      "name": "Sample Product",
+      "description": "This is a sample product description.",
+      "price": 19.99,
+      "cost": 9.99,
+      "sku": "SKU12345",
+      "minutesToMake": 120,
+      "type": "sticker",
+      "quantity": 50,
+      "productUpdatedAt": "2024-05-25T12:34:56Z",
+      "quantityUpdatedAt": "2024-05-25T12:34:56Z"
+    }
+  ]
+}

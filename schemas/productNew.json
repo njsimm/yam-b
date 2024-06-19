@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "productNew Schema",
+  "required": ["name"],
+  "properties": {
+    "userId": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "description": {
+      "type": ["string", "null"]
+    },
+    "price": {
+      "type": ["number", "null"]
+    },
+    "cost": {
+      "type": ["number", "null"]
+    },
+    "sku": {
+      "type": ["string", "null"],
+      "maxLength": 50
+    },
+    "minutesToMake": {
+      "type": ["integer", "null"]
+    },
+    "type": {
+      "type": ["string", "null"],
+      "maxLength": 50
+    },
+    "quantity": {
+      "type": "integer",
+      "default": 0
+    },
+    "productCreatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "productUpdatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "quantityUpdatedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "examples": [
+    {
+      "userId": 1,
+      "name": "Sample Product",
+      "description": "This is a sample product description.",
+      "price": 19.99,
+      "cost": 9.99,
+      "sku": "SKU12345",
+      "minutesToMake": 120,
+      "type": "sticker",
+      "quantity": 50,
+      "productCreatedAt": "2024-05-25T12:34:56Z",
+      "productUpdatedAt": "2024-05-25T12:34:56Z",
+      "quantityUpdatedAt": "2024-05-25T12:34:56Z"
+    }
+  ]
+}

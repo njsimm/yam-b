@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "businessUpdate Schema",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "userId": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "contactInfo": {
+      "type": ["string", "null"]
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "examples": [
+    {
+      "id": 1,
+      "userId": 456,
+      "name": "Sample Business",
+      "contactInfo": "1234 Sample Street, Sample City, SS 12345, sample@example.com, (123) 456-7890",
+      "createdAt": "2024-05-30T10:00:00Z"
+    }
+  ]
+}

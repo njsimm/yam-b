@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "userRegister Schema",
+  "required": ["email", "username", "password", "firstName", "lastName"],
+  "properties": {
+    "email": {
+      "type": "string",
+      "format": "email",
+      "minLength": 3,
+      "maxLength": 254
+    },
+    "username": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 50
+    },
+    "password": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 72
+    },
+    "firstName": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 50
+    },
+    "lastName": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "isAdmin": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "examples": [
+    {
+      "email": "user@example.com",
+      "username": "user123",
+      "password": "hashed_password",
+      "firstName": "John",
+      "lastLame": "Doe",
+      "isAdmin": false
+    }
+  ]
+}
