@@ -1,5 +1,5 @@
 require("dotenv").config();
-const SECRET_KEY_FALLBACK = require("./fallbackVariables");
+const SECRET_KEY_FALLBACK = require("../fallbackVariables");
 
 let DB_URI;
 
