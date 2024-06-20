@@ -4,6 +4,11 @@
 
 yam stands for **your art matters**. The idea for creating yam came to me after talking to local artists and vendors who shared the struggles they face with keeping track of their products, inventory, sales, consignment prices for different businesses they work with, and more. After going through multiple iterations, yam was finally created to be a one-stop solution for those who need help managing and tracking various aspects of their business.
 
+## Try yam out!
+
+- You can try yam here: https://yam-p2qp.onrender.com/
+- Note: yam is using the free tier of Render and Supabase, so it may take a few seconds to load.
+
 ## Backend Technologies Used
 
 - **Programming Languages:** JavaScript
